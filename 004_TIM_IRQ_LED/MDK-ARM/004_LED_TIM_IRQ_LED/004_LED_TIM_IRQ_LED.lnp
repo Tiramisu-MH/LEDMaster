@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"004_led_tim_irq_led\startup_stm32f429xx.o"
+"004_led_tim_irq_led\main.o"
+"004_led_tim_irq_led\gpio.o"
+"004_led_tim_irq_led\tim.o"
+"004_led_tim_irq_led\stm32f4xx_it.o"
+"004_led_tim_irq_led\stm32f4xx_hal_msp.o"
+"004_led_tim_irq_led\stm32f4xx_hal_tim.o"
+"004_led_tim_irq_led\stm32f4xx_hal_tim_ex.o"
+"004_led_tim_irq_led\stm32f4xx_hal_rcc.o"
+"004_led_tim_irq_led\stm32f4xx_hal_rcc_ex.o"
+"004_led_tim_irq_led\stm32f4xx_hal_flash.o"
+"004_led_tim_irq_led\stm32f4xx_hal_flash_ex.o"
+"004_led_tim_irq_led\stm32f4xx_hal_flash_ramfunc.o"
+"004_led_tim_irq_led\stm32f4xx_hal_gpio.o"
+"004_led_tim_irq_led\stm32f4xx_hal_dma_ex.o"
+"004_led_tim_irq_led\stm32f4xx_hal_dma.o"
+"004_led_tim_irq_led\stm32f4xx_hal_pwr.o"
+"004_led_tim_irq_led\stm32f4xx_hal_pwr_ex.o"
+"004_led_tim_irq_led\stm32f4xx_hal_cortex.o"
+"004_led_tim_irq_led\stm32f4xx_hal.o"
+"004_led_tim_irq_led\stm32f4xx_hal_exti.o"
+"004_led_tim_irq_led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "004_LED_TIM_IRQ_LED\004_LED_TIM_IRQ_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "004_LED_TIM_IRQ_LED.map" -o 004_LED_TIM_IRQ_LED\004_LED_TIM_IRQ_LED.axf

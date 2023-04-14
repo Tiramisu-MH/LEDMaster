@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"002_key_led\startup_stm32f429xx.o"
+"002_key_led\main.o"
+"002_key_led\gpio.o"
+"002_key_led\stm32f4xx_it.o"
+"002_key_led\stm32f4xx_hal_msp.o"
+"002_key_led\stm32f4xx_hal_tim.o"
+"002_key_led\stm32f4xx_hal_tim_ex.o"
+"002_key_led\stm32f4xx_hal_rcc.o"
+"002_key_led\stm32f4xx_hal_rcc_ex.o"
+"002_key_led\stm32f4xx_hal_flash.o"
+"002_key_led\stm32f4xx_hal_flash_ex.o"
+"002_key_led\stm32f4xx_hal_flash_ramfunc.o"
+"002_key_led\stm32f4xx_hal_gpio.o"
+"002_key_led\stm32f4xx_hal_dma_ex.o"
+"002_key_led\stm32f4xx_hal_dma.o"
+"002_key_led\stm32f4xx_hal_pwr.o"
+"002_key_led\stm32f4xx_hal_pwr_ex.o"
+"002_key_led\stm32f4xx_hal_cortex.o"
+"002_key_led\stm32f4xx_hal.o"
+"002_key_led\stm32f4xx_hal_exti.o"
+"002_key_led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "002_KEY_LED\002_KEY_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "002_KEY_LED.map" -o 002_KEY_LED\002_KEY_LED.axf

@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"006_usart_led\startup_stm32f429xx.o"
+"006_usart_led\main.o"
+"006_usart_led\gpio.o"
+"006_usart_led\usart.o"
+"006_usart_led\stm32f4xx_it.o"
+"006_usart_led\stm32f4xx_hal_msp.o"
+"006_usart_led\stm32f4xx_hal_tim.o"
+"006_usart_led\stm32f4xx_hal_tim_ex.o"
+"006_usart_led\stm32f4xx_hal_uart.o"
+"006_usart_led\stm32f4xx_hal_rcc.o"
+"006_usart_led\stm32f4xx_hal_rcc_ex.o"
+"006_usart_led\stm32f4xx_hal_flash.o"
+"006_usart_led\stm32f4xx_hal_flash_ex.o"
+"006_usart_led\stm32f4xx_hal_flash_ramfunc.o"
+"006_usart_led\stm32f4xx_hal_gpio.o"
+"006_usart_led\stm32f4xx_hal_dma_ex.o"
+"006_usart_led\stm32f4xx_hal_dma.o"
+"006_usart_led\stm32f4xx_hal_pwr.o"
+"006_usart_led\stm32f4xx_hal_pwr_ex.o"
+"006_usart_led\stm32f4xx_hal_cortex.o"
+"006_usart_led\stm32f4xx_hal.o"
+"006_usart_led\stm32f4xx_hal_exti.o"
+"006_usart_led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "006_USART_LED\006_USART_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "006_USART_LED.map" -o 006_USART_LED\006_USART_LED.axf
